@@ -1,0 +1,27 @@
+.main {
+    background-color: pink;
+  }
+  
+  .main__title {
+    color: red;
+  }
+  .super-wave1{
+      display:none;
+  }
+
+
+/*.button1{
+    padding:5px;
+    border-radius: 5px;
+    color: rgb(13, 197, 166);
+    border: 1px solid rgb(10, 138, 224);
+}
+.button2{
+    padding:5px;
+    border-radius: 5px;
+    color: rgb(233, 61, 8);
+    border: 1px solid rgb(10, 138, 224);
+}
+.button{
+    opacity: 0.1;
+}

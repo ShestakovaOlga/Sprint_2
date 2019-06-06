@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    overflow-x: hidden;
+}
+/*Ejercicio Bonus*/
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffcc00;
+    justify-content: center;
+}
+.emoji{
+  font-size: 300px;
+}
+#face_selector{
+    width: 90px;
+    height: 30px;
+    font-size: 1rem;
+}
+.update{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(29, 160, 248);
+    color:white;
+    font-size: 1rem;
+}
+.rojo{
+    background: #ff9900;
+}

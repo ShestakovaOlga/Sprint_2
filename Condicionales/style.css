@@ -1,0 +1,20 @@
+.case{
+    width: 300px;
+    height: 300px;
+    border:1px solid rgb(10, 150, 206);
+}
+.succes{
+    border: 1px solid rgb(21, 70, 21);
+    background: rgb(146, 233, 146);
+    color:rgb(21, 70, 21);
+}
+.error{
+    border: 1px solid rgb(88, 6, 6);
+    background: rgb(230, 95, 90);
+    color:rgb(102, 19, 19);
+}
+.warning{
+    border: 1px solid rgb(212, 212, 6);
+    background: rgb(238, 238, 140);
+    color:yellow;
+}

@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+/*body {
+    margin: 0;
+    font-family: Arial, san-serif;
+  }
+  
+  .teachers {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .teacher {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+  }
+  
+  .teacher__img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .teacher--selected {
+    background-color: rgb(223, 191, 160);
+  }*/
+
+  /*Ejercicio 8*/
+
+  .navbar{
+    width: 100vw;
+    background: rgb(112, 210, 223);
+    padding: 20px 0;
+    text-align: end;
+    position: fixed;
+
+  }
+  a{
+    margin-right: 80px;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  #uno{
+    width: 100vw;
+    height: 100vh;
+    border:1px solid rgb(112, 210, 223);
+    box-sizing: border-box;
+  }
+  #dos{
+    width: 100vw;
+    height: 100vh;
+    border:1px solid rgb(112, 210, 223);
+    box-sizing: border-box;
+  
+  }
+  #tres{
+    width: 100vw;
+    height: 100vh;
+    border:1px solid rgb(112, 210, 223);
+    box-sizing: border-box;
+  }
