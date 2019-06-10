@@ -20,7 +20,7 @@ buttonElement.addEventListener('click', () => {
     getData(value)
 })*/
 
-/*Ejercicio 4*/
+/*Ejercicio 4
 const buttonElement = document.querySelector('.button');
 const inputElement = document.querySelector('#input');
 
@@ -48,6 +48,51 @@ function getData(organizations) {
             }
             ulElement.innerHTML = ul;
         })
+        .catch(error => console.log(`Ha sucedido un error: ${error}`));
 
-}
+}*/
+
+/*Ejercicio 5
+const listElement = document.querySelector('ul');
+fetch(`https://dog.ceo/api/breeds/list`)
+    .then(dogResponse => dogResponse.json())
+    .then(data => {
+        const dogList = data.message;
+        const i = getRandomInt(dogList.length - 1)
+        listElement.innerHTML = dogList[i]
+    })
+    .catch(error => console.log(`Ha sucedido un error: ${error}`));
+
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}*/
+
+/*Ejercicio 2 Servidor2*/
+
+
+const buttonElement = document.querySelector('.button');
+const inputElement = document.querySelector('#name');
+
+buttonElement.addEventListener('click', () => {
+    const value = inputElement.value;
+
+    localStorage.setItem('data', JSON.stringify(data));
+    const savedData = JSON.parse(localStorage.getItem('data'));
+    console.log(savedData.length)
+
+    fetch(`https://swapi.co/api/people/?search=${value}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.results)
+            const ulElement = document.querySelector('ul');
+            let ul = '';
+            for (const per of data.results) {
+                const liElement = `<li>${per.name}, height: ${per.height}cm</li>`
+                ul += liElement;
+            }
+            ulElement.innerHTML = ul;
+
+        })
+})
 
