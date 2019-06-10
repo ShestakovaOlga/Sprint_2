@@ -9,7 +9,7 @@ for (let list of numbers) {
     items.appendChild(newList);
 }*/
 
-/*Ejercicio 2*/
+/*Ejercicio 2
 import img1madrid from './madrid1.jpg'
 import img2madrid from './M2.jpg'
 import img3madrid from './M3.jpg'
@@ -54,4 +54,39 @@ function ponerNY() {
 
 }
 
-ponerMadrid()
+ponerMadrid()*/
+
+/*Ejercicio 3*/
+const formulario = [{
+    nombre: 'Anna',
+    apellidos: 'Blanca Suarez',
+    telefono: 689000000,
+},
+{
+    nombre: 'Lila',
+    apellidos: 'Villa Gonzales',
+    telefono: 689111000,
+},
+{
+    nombre: 'Sara',
+    apellidos: 'García García',
+    telefono: 689222000,
+}]
+
+const input1Element = document.querySelector('#firstname');
+const input2Element = document.querySelector('#secondname');
+const input3Element = document.querySelector('#num');
+const selectElement = document.getElementById('form');
+
+selectElement.addEventListener('change', () => {
+    const value = selectElement.options[selectElement.selectedIndex].value;
+    for (let add of formulario) {
+        if (value == add.nombre) {
+            input1Element.value = add.nombre;
+            input2Element.value = add.apellidos;
+            input3Element.value = add.telefono;
+            console.log(input1Element.value)
+        }
+
+    }
+})
