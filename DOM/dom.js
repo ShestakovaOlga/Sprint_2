@@ -56,7 +56,7 @@ function ponerNY() {
 
 ponerMadrid()*/
 
-/*Ejercicio 3*/
+/*Ejercicio 3
 const formulario = [{
     nombre: 'Anna',
     apellidos: 'Blanca Suarez',
@@ -89,4 +89,21 @@ selectElement.addEventListener('change', () => {
         }
 
     }
-})
+})*/
+
+/*Ejercicio 6*/
+const textElement = document.querySelector('.texto');
+const color = ['white;', 'blue', 'red', 'green', 'yellow', 'rosybrown']
+let numeroRepetir = '';
+for (let i = 0; i < 100; i++) {
+    const brElement = document.createElement('br')
+    const selectElement = document.createElement('select')
+    const optionElement = document.createElement('option')
+    const newText = document.createTextNode('He aprendido bien cómo funcionan los bucles');
+    console.log(i)
+    textElement.appendChild(newText);
+    selectElement.appendChild(optionElement);
+    textElement.appendChild(selectElement)
+    textElement.appendChild(brElement);
+}
+
